@@ -1,0 +1,258 @@
+body {
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 290vh; 
+    font-family: 'Abhaya Libre ExtraBold', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
+footer {
+    background-color: #E9C7D9;  /* Warna latar belakang pink */
+    color: white;            /* Warna teks putih */
+    text-align: center;      /* Teks berada di tengah */
+    padding: 10px 0;         /* Padding atas dan bawah */
+    margin-top: auto;
+}
+
+.custom-card {
+    background-color: #EED6E3; 
+    border: 3px solid white; 
+    border-radius: 15px; 
+}
+
+.custom-card h4 {
+    color: black; 
+}
+
+.section {
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.section.fade-in {
+    opacity: 1;  
+}
+
+.custom-btn {
+    background-color: #EED6E3; 
+    border: 3px solid white; 
+    border-radius: 15px; 
+    color: black; 
+    width: 100%; 
+}
+
+.custom-btn:hover {
+    background-color: #E9C7D9; 
+}
+
+.rounded-image {
+    width: 230px; 
+    height: 230px; 
+    border-radius: 50%; 
+    border: 3px solid white; 
+    object-fit: cover; 
+}
+
+.custom-input {
+    background-color: #EED6E3; 
+    border: 3px solid white; 
+    border-radius: 15px; 
+}
+
+.custom-input:focus {
+    background-color: #E9C7D9;
+    border: 3px solid white; 
+    outline: none; 
+}
+
+.rounded-border {
+    border: 3px solid white; 
+    border-radius: 15px; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    font-size: 24px; 
+    color: black; 
+    background-color: #E9C7D9; 
+}
+
+.rounded-border-custom {
+    border: 3px solid white; 
+    border-radius: 15px; 
+    padding: 35px 30px; 
+    display: inline-block; 
+    font-size: 24px; 
+    color: black; 
+    background-color: #EED6E3; 
+}
+
+.vertical-divider1 {
+    border-left: 3px solid white; 
+    height: 550px; 
+    margin: auto; 
+}
+
+.vertical-divider2 {
+    border-left: 3px solid white;
+    height: 460px;
+    margin: auto;
+}
+
+.title {
+    font-weight: bold; 
+    color: black; 
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;  
+}
+
+.animate-progress {
+    width: 0;  
+}
+
+.animate-progress.active {
+    width: 100%; 
+}
+
+.custom-progress-bar {
+background-color: #E9C7D9; 
+}
+
+.progress-bar-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.rounded-border {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #EED6E3;
+    font-size: 30px;
+}
+
+.progress-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[readonly] {
+    background-color: #E9C7D9 !important; 
+    color: #000; 
+    border: 1px solid #ddd; 
+    cursor: not-allowed; 
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #E9C7D9 !important;
+    opacity: 1;
+}
+
+.progress {
+    height: 20px; 
+    background-color: white; 
+    border-radius: 10px; 
+}
+
+.progress-bar {
+    height: 100%; 
+    border-radius: 10px; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+.progress-bar[aria-valuenow="80"] {
+    background-color: #E9C7D9; 
+}
+
+.progress-bar[aria-valuenow="90"] {
+    background-color: #E9C7D9; 
+}
+
+.progress-bar[aria-valuenow="70"] {
+    background-color: #E9C7D9; 
+}
+
+.progress-bar[aria-valuenow="100"] {
+    background-color: #E9C7D9; 
+}
+
+.progress-bar[aria-valuenow="95"] {
+    background-color: #E9C7D9; 
+}
+
+.margin-bawah{
+    margin-bottom: 20px;
+}
+.progress-title {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 10px; 
+    text-align: center; 
+    letter-spacing: 3px;
+}
+
+#priview, #priview2, #priview3, #priview4 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 100%; 
+    border: 5px solid white; 
+    border-radius: 8px; 
+}
+
+li:hover #priview, li:hover #priview2, li:hover #priview3, li:hover #priview4 {
+    display: block;
+    opacity: 1;
+}
+
+li {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-color {
+    color: grey;
+}
+
+.image {
+    margin: 0 auto;
+    display: block;
+    width: 80%; 
+}
+
+.image2 {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+
+#priview, #priview2, #priview3, #priview4 {
+    margin-top: 8px;
+}
+
+.pop-effect {
+    transition: transform 0.5s;
+}
+
+.pop-effect:hover {
+    transform: scale(1.3);
+}
